@@ -1,9 +1,9 @@
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-<form
+<form 
     action="https://app.convertkit.com/forms/1647478/subscriptions"
      method="post"
 >
-    <div data-style="clean">
+    <div style="max-width: 480px;margin: 0 auto">
         <ul  data-element="errors" data-group="alert"></ul>
         <div data-element="fields" data-stacked="false">
             <div>
@@ -24,9 +24,37 @@
                     type="email"
                 />
             </div>
-            <button data-element="submit">
+            <button data-element="submit" class="sub-button">
                 <span>Subscribe</span>
             </button>
         </div>
     </div>
 </form>
+<style>
+input{
+    border: 1px solid #333;
+    color: black;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+input:focus{
+border-radius: 0;
+border: 1px solid #333;
+outline: none;
+}
+
+form{
+    text-align: center;
+}
+.sub-button{
+    background-color: #3700ff;
+    color: white;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+</style>
